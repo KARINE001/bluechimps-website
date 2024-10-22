@@ -1,0 +1,91 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f0f0f0;
+    color: #333;
+}
+
+/* Hero Section */
+.hero-section {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #2b7bff;
+    position: relative;
+}
+
+.hero-banner {
+    text-align: center;
+    color: white;
+}
+
+.cta-button {
+    padding: 10px 20px;
+    background-color: #ffd700;
+    border: none;
+    cursor: pointer;
+    font-size: 18px;
+    margin-top: 20px;
+    border-radius: 5px;
+}
+
+.cta-button:hover {
+    background-color: #ffcc00;
+}
+
+/* Swinging Chimp Animation */
+.swinging-container {
+    position: absolute;
+    top: 10px;
+    left: -150px;
+    width:
+    width: 100px;
+    animation: swingChimp 5s ease-in-out infinite;
+}
+
+#swinging-chimp {
+    width: 100px;
+}
+
+/* Keyframe Animation for Swinging Chimp */
+@keyframes swingChimp {
+    0% {
+        transform: translateX(-150px);
+    }
+    50% {
+        transform: translateX(100vw) translateY(-50px);
+    }
+    100% {
+        transform: translateX(150vw);
+    }
+}
+
+/* About Section */
+.about-section, .tokenomics-section {
+    padding: 50px;
+    text-align: center;
+    background-color: #fff;
+}
+
+.about-section h2, .tokenomics-section h2 {
+    font-size: 36px;
+    color: #2b7bff;
+}
+
+.about-section p, .tokenomics-section p {
+    font-size: 18px;
+    color: #555;
+}
+
+.tokenomics-section a.tokenomics-section a {
+    color: #2b7bff;
+    text-decoration: none;
+}
+
+.tokenomics-section a:hover {
+    text-decoration: underline;
+}
+
